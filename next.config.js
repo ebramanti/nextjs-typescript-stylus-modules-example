@@ -7,7 +7,7 @@ if (process.env.SASS) {
     module.exports = withTypescript(
         withCSS({
             ...withSass({
-                cssModules: true,
+                cssModules: false,
                 cssLoaderOptions: {
                     importLoaders: 2,
                     localIdentName: "[path][name]-[local]--[hash:base64:5]",
@@ -20,7 +20,7 @@ if (process.env.SASS) {
     module.exports = withTypescript(
         withCSS({
             ...withStylus({
-                cssModules: true,
+                cssModules: false,
                 cssLoaderOptions: {
                     importLoaders: 2,
                     localIdentName: "[path][name]-[local]--[hash:base64:5]",

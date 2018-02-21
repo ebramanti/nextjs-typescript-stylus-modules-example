@@ -1,17 +1,20 @@
-import Link from 'next/link'
 import React from "react";
+import Layout from '../components/layout';
+// import Button from "../src/CoolButton";
+import { Button } from "@videoamp-private/preamp-ui";
 //@ts-ignore
 import { coolClass } from "./index.stylus";
-import Button from "../src/CoolButton";
-import "../src/App.css";
 
-export default () =>
-  <div className="va-dark">
-    <div className={coolClass}>
-      Hello World.
-    </div>
-    <br />
-    <Link href="/about">
-      <Button />
-    </Link>
-  </div>
+export default () => (
+    <Layout>
+        <div className={coolClass}>Hello World.</div>
+        <Button
+            flat
+            iconClassName="material-icons"
+            iconChildren="home"
+            onClick={() => { }}
+        >
+            Home
+        </Button>
+    </Layout>
+)

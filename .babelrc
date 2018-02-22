@@ -1,0 +1,23 @@
+{
+  "plugins": [
+    [
+      "wrap-in-js",
+      {
+        "extensions": ["css$"]
+      }
+    ],
+    [
+      "styled-jsx/babel",
+      {
+          "plugins": [
+              "styled-jsx-plugin-stylus",
+              "styled-jsx-plugin-postcss"
+          ]
+      }
+    ]
+  ],
+  "presets": [
+    "next/babel"
+  ],
+  "ignore": []
+}

@@ -5,7 +5,7 @@ import themes from "@videoamp-private/preamp-ui/dist/themes.css";
 import style from "@videoamp-private/preamp-ui/dist/style.css";
 
 export default ({ children, title = 'VideoAmp' }) => (
-    <html className="va-dark">
+    <div className="va-dark">
         <Head>
             <title>{title}</title>
             <meta charSet='utf-8' />
@@ -24,5 +24,5 @@ export default ({ children, title = 'VideoAmp' }) => (
         </header>
 
         {children}
-    </html>
+    </div>
 )

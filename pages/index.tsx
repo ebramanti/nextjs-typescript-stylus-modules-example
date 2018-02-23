@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from '../components/layout';
-// import Button from "../src/CoolButton";
-import { Button } from "@videoamp-private/preamp-ui";
+import Button from "../src/CoolButton";
 //@ts-ignore
 import { coolClass } from "./index.stylus";
 

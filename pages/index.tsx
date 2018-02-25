@@ -6,7 +6,7 @@ import cx from "classnames";
 import "@videoamp-private/preamp-ui/dist/themes.css";
 import "@videoamp-private/preamp-ui/dist/style.css";
 
-import Button from "@videoamp-private/preamp-ui/dist/src/components/buttons/Button";
+import Button from "@videoamp-private/preamp-ui/dist/buttons/Button";
 
 import {
   buttonClassName,

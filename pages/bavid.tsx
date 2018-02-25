@@ -3,7 +3,7 @@ import Head from '../components/head'
 import Nav from '../components/nav'
 import cx from "classnames";
 
-import Button from "@videoamp-private/preamp-ui/dist/src/components/buttons/Button";
+import Button from "@videoamp-private/preamp-ui/dist/buttons/Button";
 
 import {
     buttonClassName,

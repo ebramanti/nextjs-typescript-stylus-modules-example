@@ -3,8 +3,8 @@ import Head from '../components/head'
 import Nav from '../components/nav'
 import cx from "classnames";
 
-import "@videoamp-private/preamp-ui/dist/themes.css";
-import "@videoamp-private/preamp-ui/dist/style.css";
+import "@videoamp-private/preamp-ui/styles/themes.css";
+import "@videoamp-private/preamp-ui/styles/main.css";
 
 import Button from "@videoamp-private/preamp-ui/dist/buttons/Button";
 

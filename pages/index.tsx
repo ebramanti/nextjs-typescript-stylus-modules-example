@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Head from '../components/head'
 import Nav from '../components/nav'
 import cx from "classnames";
+import { Component } from "react";
+import axios from "axios";
 
 import "@videoamp-private/preamp-ui/styles/themes.css";
 import "@videoamp-private/preamp-ui/styles/main.css";
@@ -14,12 +16,31 @@ import {
   edward
 } from "../styles";
 
-export default () => <div>
-  <Link href="/bavid">
-    <Button flat className={cx("bavid", buttonClassName)}>
-      <p className="edward">BB</p>
-      <style jsx>{edward}</style>
-    </Button>
-  </Link>
-  {buttonStyles}
-</div>
+interface HomeProps {
+  nodeVersion: string;
+}
+
+const Home: NextReact.SFC<HomeProps> = ({ nodeVersion }) => (
+    <div>
+      <Link prefetch href="/bavid">
+        <Button flat className={cx("bavid", buttonClassName)}>
+          <p className="edward">BB</p>
+          <style jsx>{edward}</style>
+        </Button>
+      </Link>
+      <h2>Current version of Node: {nodeVersion}</h2>
+      {buttonStyles}
+    </div>
+)
+
+Home.getInitialProps = async() => {
+  const { data } = await axios.get('http://semver.io/node')
+  const nodeVersion = data;
+  return { nodeVersion }
+}
+
+Home.defaultProps = {
+  nodeVersion: "Unknown"
+};
+
+export default Home;

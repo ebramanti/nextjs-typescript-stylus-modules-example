@@ -22,9 +22,9 @@ interface HomeProps {
 
 const Home: NextReact.SFC<HomeProps> = ({ nodeVersion }) => (
     <div>
-      <Link prefetch href="/bavid">
+      <Link prefetch href="/dashboard">
         <Button flat className={cx("bavid", buttonClassName)}>
-          <p className="edward">BB</p>
+          <p className="edward">BCB</p>
           <style jsx>{edward}</style>
         </Button>
       </Link>

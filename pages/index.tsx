@@ -14,13 +14,12 @@ interface HomeProps {
 }
 
 const Home: NextReact.SFC<HomeProps> = ({ nodeVersion }) => (
-    <Layout>
-        <div>
-            <Link prefetch href="/audience">
-                <Button flat styleName="indexButton">Load Audience</Button>
-            </Link>
-            <h2>Current version of Node: {nodeVersion}</h2>
-        </div>
+    <Layout title="This is the home page">
+        <aside></aside>
+        <Link prefetch href="/audience">
+            <Button flat className="indexButton">Load Audience</Button>
+        </Link>
+        <h2>Current version of Node: {nodeVersion}</h2>
         <style jsx>{indexStyles}</style>
     </Layout>
 )

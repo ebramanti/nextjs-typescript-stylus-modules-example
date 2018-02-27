@@ -17,7 +17,6 @@ export const Layout = ({ children, props, title = "This is the default title" })
             <Nav {...props}></Nav>
         </header>
         <div className="outer">
-            <aside></aside>
             {children}
         </div>
         <style jsx>{layoutStyles}</style>

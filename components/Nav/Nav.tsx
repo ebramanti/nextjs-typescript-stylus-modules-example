@@ -1,6 +1,6 @@
 import TabsContainer from "@videoamp-private/preamp-ui/dist/lists/TabsContainer";
 
-const Nav = (props) => {
+export const Nav = (props) => {
     const { tabs, activeTabIndex, onTabChange } = props;
 
     return (
@@ -11,5 +11,3 @@ const Nav = (props) => {
         />
     )
 }
-
-export default Nav

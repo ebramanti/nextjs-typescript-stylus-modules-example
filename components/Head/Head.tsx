@@ -5,7 +5,7 @@ const defaultDescription = ''
 const defaultOGURL = ''
 const defaultOGImage = ''
 
-const Head = (props) => (
+export const Head = (props) => (
   <NextHead>
     <meta charset="UTF-8" />
     <title>{props.title || ''}</title>
@@ -34,4 +34,3 @@ Head.propTypes = {
   ogImage: string
 }
 
-export default Head

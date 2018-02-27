@@ -1,12 +1,12 @@
 import Link from 'next/link'
-import Head from 'components/head'
-import Nav from 'components/nav'
+import { Head } from '../../components/Head';
 import cx from "classnames";
-import { TabsContainer, Toolbar } from '@videoamp-private/preamp-ui';
+import TabsContainer from "@videoamp-private/preamp-ui/dist/lists/TabsContainer";
+import Toolbar from "@videoamp-private/preamp-ui/dist/toolbars/Toolbar";
 
 import {
     dashboardStyles,
-} from "./dashboardStyles";
+} from "./dashboard.styles";
 
 const tabs = [
     {

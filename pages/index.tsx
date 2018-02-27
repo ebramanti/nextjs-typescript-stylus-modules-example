@@ -1,6 +1,4 @@
 import Link from 'next/link'
-import Head from 'components/head'
-import Nav from 'components/nav'
 import cx from "classnames";
 import { Component } from "react";
 import axios from "axios";
@@ -15,7 +13,7 @@ import {
   buttonClassName,
   buttonStyles,
   edward
-} from "../styles";
+} from "./index.styles";
 
 interface HomeProps {
   nodeVersion: string;

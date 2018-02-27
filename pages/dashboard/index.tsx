@@ -1,8 +1,12 @@
 import Link from 'next/link'
-import { Head } from '../../components/Head';
 import cx from "classnames";
+
+import { Head } from '../../components/Head';
+import { Nav } from '../../components/Nav';
+
 import TabsContainer from "@videoamp-private/preamp-ui/dist/lists/TabsContainer";
 import Toolbar from "@videoamp-private/preamp-ui/dist/toolbars/Toolbar";
+import FixedDrawer from "@videoamp-private/preamp-ui/dist/lists/FixedDrawer";
 
 import {
     dashboardStyles,

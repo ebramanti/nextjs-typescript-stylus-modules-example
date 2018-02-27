@@ -8,9 +8,7 @@ import TabsContainer from "@videoamp-private/preamp-ui/dist/lists/TabsContainer"
 import Toolbar from "@videoamp-private/preamp-ui/dist/toolbars/Toolbar";
 import FixedDrawer from "@videoamp-private/preamp-ui/dist/lists/FixedDrawer";
 
-import {
-    audienceStyles,
-} from "./audience.styles";
+import { audienceStyles } from "./audience.styles";
 
 const tabs = [
     {

@@ -1,9 +1,12 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import { Nav } from '../Nav';
 
-// import "normalize.css";
-// import "@videoamp-private/preamp-ui/styles/themes.css";
-// import "@videoamp-private/preamp-ui/styles/main.css";
+import "normalize.css";
+import "@videoamp-private/preamp-ui/styles/themes.css";
+import "@videoamp-private/preamp-ui/styles/main.css";
+
+import { layoutStyles } from "./layout.styles";
 
 export const Layout = ({ children, props, title = "This is the default title" }) => (
     <div>
@@ -11,13 +14,12 @@ export const Layout = ({ children, props, title = "This is the default title" })
             <title>{title}</title>
         </Head>
         <header>
-            <nav>
-                <Link href='/'><a>Home</a></Link> |
-                <Link href='/about'><a>About</a></Link> |
-                <Link href='/contact'><a>Contact</a></Link>
-            </nav>
+            <Nav {...props}></Nav>
         </header>
-
-        {children}
+        <div className="outer">
+            <aside></aside>
+            {children}
+        </div>
+        <style jsx>{layoutStyles}</style>
     </div>
 )

@@ -9,8 +9,8 @@ import Toolbar from "@videoamp-private/preamp-ui/dist/toolbars/Toolbar";
 import FixedDrawer from "@videoamp-private/preamp-ui/dist/lists/FixedDrawer";
 
 import {
-    dashboardStyles,
-} from "./dashboard.styles";
+    audienceStyles,
+} from "./audience.styles";
 
 const tabs = [
     {
@@ -27,7 +27,7 @@ const activeTabIndex = 0;
 const onTabChange = () => {};
 
 export default () => [
-    <Head title="Template Manager"></Head>,
+    <Head title="Audience"></Head>,
     <header>
         <Nav
             toolbar={<Toolbar title="Template Manager"/>}
@@ -38,7 +38,7 @@ export default () => [
     </header>,
     <div className="outer">
         <aside>
-            <FixedDrawer />
+            {/* <FixedDrawer /> */}
         </aside>
         <section>
             <main>
@@ -52,5 +52,5 @@ export default () => [
             <footer></footer>
         </section>
     </div>,
-    <style jsx>{dashboardStyles}</style>
+    <style jsx>{audienceStyles}</style>
 ];

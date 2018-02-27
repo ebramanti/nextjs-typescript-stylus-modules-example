@@ -1,6 +1,10 @@
 // ./pages/_document.js
 import Document, { Head, Main, NextScript } from 'next/document'
 
+import "normalize.css";
+import "@videoamp-private/preamp-ui/styles/themes.css";
+import "@videoamp-private/preamp-ui/styles/main.css";
+
 export default class extends Document {
   render() {
     return (

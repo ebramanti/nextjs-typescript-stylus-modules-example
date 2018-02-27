@@ -3,25 +3,34 @@ import cx from "classnames";
 import { Component } from "react";
 import axios from "axios";
 
+import "normalize.css";
+import "@videoamp-private/preamp-ui/styles/themes.css";
+import "@videoamp-private/preamp-ui/styles/main.css";
+
 import Button from "@videoamp-private/preamp-ui/dist/buttons/Button";
 
 import {
-  indexStyles,
+  buttonClassName,
+  buttonStyles,
+  edward
 } from "./index.styles";
 
 interface HomeProps {
   nodeVersion: string;
 }
 
-const Home: NextReact.SFC<HomeProps> = ({ nodeVersion }) => [
+const Home: NextReact.SFC<HomeProps> = ({ nodeVersion }) => (
     <div>
-      <Link prefetch href="/audience">
-        <Button flat styleName="indexButton">Load Audience</Button>
+      <Link prefetch href="/dashboard">
+        <Button flat className={cx("bavid", buttonClassName)}>
+          <p className="edward">BCB</p>
+          <style jsx>{edward}</style>
+        </Button>
       </Link>
       <h2>Current version of Node: {nodeVersion}</h2>
-    </div>,
-    <style jsx>{indexStyles}</style>
-]
+      {buttonStyles}
+    </div>
+)
 
 Home.getInitialProps = async() => {
   const { data } = await axios.get('http://semver.io/node')

@@ -1,6 +1,6 @@
 import css from 'styled-jsx/css'
 
-export const dashboardStyles = css`
+export const audienceStyles = css`
     header {
         background: blue;
         width: 100%;

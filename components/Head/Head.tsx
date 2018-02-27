@@ -1,13 +1,19 @@
-import NextHead from 'next/head'
-import { string } from 'prop-types'
+import NextHead from "next/head"
 
 const defaultDescription = ''
 const defaultOGURL = ''
 const defaultOGImage = ''
 
-export const Head = (props) => (
+export interface HeadProps {
+    title: string;
+    description: string;
+    url: string;
+    ogImage: string;
+}
+
+export const Head = (props: HeadProps) => (
   <NextHead>
-    <meta charset="UTF-8" />
+    <meta charSet="UTF-8" />
     <title>{props.title || ''}</title>
     <meta name="description" content={props.description || defaultDescription} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,11 +32,3 @@ export const Head = (props) => (
     <meta property="og:image:height" content="630" />
   </NextHead>
 )
-
-Head.propTypes = {
-  title: string,
-  description: string,
-  url: string,
-  ogImage: string
-}
-

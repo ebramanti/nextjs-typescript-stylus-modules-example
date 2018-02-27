@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Head from '../components/head'
-import Nav from '../components/nav'
+import Head from 'components/head'
+import Nav from 'components/nav'
 import cx from "classnames";
 
 import {

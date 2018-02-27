@@ -5,6 +5,7 @@ import cx from "classnames";
 import { Component } from "react";
 import axios from "axios";
 
+import "normalize.css";
 import "@videoamp-private/preamp-ui/styles/themes.css";
 import "@videoamp-private/preamp-ui/styles/main.css";
 

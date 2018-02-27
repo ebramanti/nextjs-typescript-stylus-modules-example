@@ -36,13 +36,4 @@ export default () => [
         </section>
     </div>,
     <style jsx>{dashboardStyles}</style>
-]
-
-
-// export default () => <div>
-//     <Head
-//         title="test page bavid"
-//         description="Test Page description goes here"
-//     ></Head>
-//     <Nav tabs={tabs}></Nav>
-// </div>
+];

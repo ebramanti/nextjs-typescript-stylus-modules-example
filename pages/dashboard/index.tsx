@@ -25,7 +25,7 @@ const onTabChange = () => {};
 export default () => [
     <Head title="Template Manager"></Head>,
     <header>
-        <TabsContainer
+        <Nav
             toolbar={<Toolbar title="Template Manager"/>}
             tabs={tabs}
             activeTabIndex={activeTabIndex}
@@ -33,7 +33,9 @@ export default () => [
         />
     </header>,
     <div className="outer">
-        <aside></aside>
+        <aside>
+            <FixedDrawer />
+        </aside>
         <section>
             <main>
                 <div className="container">

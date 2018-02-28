@@ -49,6 +49,6 @@ export default () => [
             </main>
             <footer></footer>
         </section>
-    </div>,
+        </div>,
     <style jsx>{aboutStyles}</style>
 ];

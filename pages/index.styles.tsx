@@ -21,11 +21,6 @@ export const indexStyles = css`
             padding: 1em;
             flex-direction: column;
         }
-
-        footer {
-            background-color: purple;
-            height: 48px;
-        }
     }
 
     .card {

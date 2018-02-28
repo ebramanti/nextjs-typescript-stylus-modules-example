@@ -35,9 +35,7 @@ export default () => [
         />
     </header>,
     <div className="outer">
-        <aside>
-            {/* <FixedDrawer /> */}
-        </aside>
+        <aside></aside>
         <section>
             <main>
                 <div className="container">

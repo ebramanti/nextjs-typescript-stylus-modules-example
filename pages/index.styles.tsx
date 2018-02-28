@@ -1,15 +1,38 @@
 import css from 'styled-jsx/css'
 
 export const indexStyles = css`
-    div {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    aside {
+        min-width: 280px;
+        background-color: red;
     }
 
-    .indexButton {
-        color: #FF0000;
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        main {
+            background-color: yellow;
+            display: flex;
+            overflow: auto;
+            flex: 1 1 0;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 1em;
+            flex-direction: column;
+        }
+
+        footer {
+            background-color: purple;
+            height: 48px;
+        }
+    }
+
+    .card {
+        width: 640px;
+        min-height: 450px;
+        background-color: green;
+        display: block;
+        margin: 1em 0;
     }
 `;

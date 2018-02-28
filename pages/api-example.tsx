@@ -9,12 +9,6 @@ import "@videoamp-private/preamp-ui/styles/main.css";
 
 import Button from "@videoamp-private/preamp-ui/dist/buttons/Button";
 
-import {
-  buttonClassName,
-  buttonStyles,
-  edward
-} from "./index.styles";
-
 interface HomeProps {
   nodeVersion: string;
 }
@@ -22,13 +16,11 @@ interface HomeProps {
 const Home: NextReact.SFC<HomeProps> = ({ nodeVersion }) => (
     <div>
       <Link prefetch href="/dashboard">
-        <Button flat className={cx("bavid", buttonClassName)}>
+        <Button flat>
           <p className="edward">BCB</p>
-          <style jsx>{edward}</style>
         </Button>
       </Link>
       <h2>Current version of Node: {nodeVersion}</h2>
-      {buttonStyles}
     </div>
 )
 

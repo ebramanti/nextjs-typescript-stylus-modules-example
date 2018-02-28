@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import Head from 'next/head'
-import { Nav } from '../Nav';
+import Link from "next/link"
+import { Head } from "../Head";
+import { Nav } from "../Nav";
 
 import "normalize.css";
 import "@videoamp-private/preamp-ui/styles/themes.css";
@@ -10,9 +10,7 @@ import { layoutStyles } from "./layout.styles";
 
 export const Layout = ({ children, props, title = "This is the default title" }) => (
     <div>
-        <Head>
-            <title>{title}</title>
-        </Head>
+        <Head title={title}></Head>
         <header>
             <Nav {...props}></Nav>
         </header>
